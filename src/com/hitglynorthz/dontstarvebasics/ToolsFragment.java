@@ -14,7 +14,7 @@ import android.widget.Toast;
 
 public class ToolsFragment extends ListFragment{
 	
-	// Array de String que contiene nuestros queridos Sistemas Operativos
+	// Array de String que contiene nuestros queridos
     private String[] tools = { "Axe", "Pickaxe", "Shovel", "Pitchfork",
             "Hammer", "Razor", "Luxury Axe", "Regal Shovel",
             "Opulent Pickaxe" };
