@@ -1,27 +1,42 @@
 package com.hitglynorthz.dontstarvebasics;
 
-import android.app.Fragment;
+import android.app.ListFragment;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+import android.widget.Toast;
 
-public class FoodFragment extends Fragment{
-
-  
-	@Override
-	public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState) {
-
-		LinearLayout ll = (LinearLayout) inflater.inflate(R.layout.food,container, false);
-		/*TextView tv = (TextView) ll.findViewById(R.id.textView1);
-
-		tv.setOnClickListener(new OnClickListener() {
-		    public void onClick(View v) {
-		    
-		    }
-		});*/
-		return ll;
-
-	}
+public class FoodFragment extends ListFragment{
+	private String[] food = { "Basic Farm", "Improved Farm", "Bee Box", "Drying Rack", "Crock Pot", "Ice Box" };
+ 
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+            Bundle savedInstanceState) {
+        return inflater.inflate(R.layout.food, container, false);
+    }
+ 
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+ 
+        setListAdapter(new ArrayAdapter<String>(getActivity(), R.layout.item_list, food));
+    }
+ 
+    @Override
+    public void onListItemClick(ListView l, View v, int position, long id) {
+        super.onListItemClick(l, v, position, id);
+        
+        //Toast.makeText(getActivity(), "Ha pulsado " + tools[position], Toast.LENGTH_SHORT).show();
+        //ListView lv = getListView();
+        Intent i = new Intent(getActivity(), SingleListItem.class);
+        i.putExtra("title", food[position]);
+        startActivity(i);
+    }
 }
