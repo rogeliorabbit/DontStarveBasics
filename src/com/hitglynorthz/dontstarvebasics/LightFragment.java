@@ -1,6 +1,7 @@
 package com.hitglynorthz.dontstarvebasics;
 
 import android.app.ListFragment;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -33,11 +34,13 @@ public class LightFragment extends ListFragment{
  
     @Override
     public void onListItemClick(ListView l, View v, int position, long id) {
-        // TODO Auto-generated method stub
         super.onListItemClick(l, v, position, id);
- 
-        // Mostramos un mensaje con el elemento pulsado
-        Toast.makeText(getActivity(), "Ha pulsado " + light[position], Toast.LENGTH_SHORT).show();
+        
+        //Toast.makeText(getActivity(), "Ha pulsado " + tools[position], Toast.LENGTH_SHORT).show();
+        //ListView lv = getListView();
+        Intent i = new Intent(getActivity(), SingleListItem.class);
+        i.putExtra("title", light[position]);
+        startActivity(i);
     }
 }
 

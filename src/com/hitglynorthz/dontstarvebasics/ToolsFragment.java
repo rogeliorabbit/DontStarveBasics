@@ -4,6 +4,7 @@ import android.app.ListFragment;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -35,15 +36,9 @@ public class ToolsFragment extends ListFragment{
         super.onListItemClick(l, v, position, id);
         
         //Toast.makeText(getActivity(), "Ha pulsado " + tools[position], Toast.LENGTH_SHORT).show();
-        ListView lv = getListView();
-        l.setOnItemClickListener(new OnItemClickListener() {
-          public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-               
-              Intent i = new Intent(getActivity(), SingleListItem.class);
-              i.putExtra("title", tools[position]);
-              startActivity(i);
-             
-          }
-        });
+        //ListView lv = getListView();
+        Intent i = new Intent(getActivity(), SingleListItem.class);
+        i.putExtra("title", tools[position]);
+        startActivity(i);
     }
 }

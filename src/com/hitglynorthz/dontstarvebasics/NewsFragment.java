@@ -12,9 +12,7 @@ import android.widget.Toast;
 public class NewsFragment extends ListFragment{
 	
 	// Array de String que contiene nuestros queridos Sistemas Operativos
-    private String[] news = { "Android", "Ubuntu", "Mac OSX", "Windows",
-            "Solaris", "Windows 8", "Ubuntu 12.04", "Windows Phone",
-            "Windows 7", "Kubuntu", "Ubuntu 12.10" };
+    private String[] news = { "Ultima versión: xxxx", "Próxima Actualización", "blog updates", "twitter" };
  
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
