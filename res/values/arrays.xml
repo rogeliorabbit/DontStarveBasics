@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="tools_imgs">
+        <item>@drawable/axe</item>
+        <item>@drawable/pickaxe</item>
+        <item>@drawable/shovel</item>
+        <item>@drawable/pitchfork</item>
+        <item>@drawable/hammer</item>
+        <item>@drawable/razor</item>
+        <item>@drawable/luxury_axe</item>
+        <item>@drawable/regal_shovel</item>
+        <item>@drawable/opulent_pickaxe</item>
+    </string-array>
+
+</resources>

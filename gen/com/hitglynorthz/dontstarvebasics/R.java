@@ -8,6 +8,9 @@
 package com.hitglynorthz.dontstarvebasics;
 
 public final class R {
+    public static final class array {
+        public static final int tools_imgs=0x7f040000;
+    }
     public static final class attr {
     }
     public static final class dimen {
@@ -17,24 +20,82 @@ public final class R {
          screen margins) for sw720dp devices (e.g. 10" tablets) in landscape here.
     
          */
-        public static final int activity_horizontal_margin=0x7f040000;
-        public static final int activity_vertical_margin=0x7f040001;
+        public static final int activity_horizontal_margin=0x7f050000;
+        public static final int activity_vertical_margin=0x7f050001;
     }
     public static final class drawable {
         public static final int action_add=0x7f020000;
-        public static final int card_min=0x7f020001;
-        public static final int drawer_shadow=0x7f020002;
-        public static final int ic_action_example=0x7f020003;
-        public static final int ic_action_settings=0x7f020004;
-        public static final int ic_drawer=0x7f020005;
-        public static final int ic_launcher=0x7f020006;
-        public static final int ic_save=0x7f020007;
+        public static final int alchemy_engine=0x7f020001;
+        public static final int axe=0x7f020002;
+        public static final int backpack=0x7f020003;
+        public static final int basic_farm=0x7f020004;
+        public static final int bee_box=0x7f020005;
+        public static final int bee_mine=0x7f020006;
+        public static final int bird_trap=0x7f020007;
+        public static final int blow_dart=0x7f020008;
+        public static final int boomerang=0x7f020009;
+        public static final int bug_net=0x7f02000a;
+        public static final int campfire=0x7f02000b;
+        public static final int card_min=0x7f02000c;
+        public static final int compass=0x7f02000d;
+        public static final int crock_pot=0x7f02000e;
+        public static final int divining_rod=0x7f02000f;
+        public static final int drawer_shadow=0x7f020010;
+        public static final int drying_rack=0x7f020011;
+        public static final int fire_dart=0x7f020012;
+        public static final int fire_pit=0x7f020013;
+        public static final int football_helmet=0x7f020014;
+        public static final int grass_suit=0x7f020015;
+        public static final int gunpowder=0x7f020016;
+        public static final int ham_bat=0x7f020017;
+        public static final int hammer=0x7f020018;
+        public static final int healing_salve=0x7f020019;
+        public static final int heat_stone=0x7f02001a;
+        public static final int honey_poultice=0x7f02001b;
+        public static final int ic_action_example=0x7f02001c;
+        public static final int ic_action_settings=0x7f02001d;
+        public static final int ic_drawer=0x7f02001e;
+        public static final int ic_launcher=0x7f02001f;
+        public static final int ic_save=0x7f020020;
+        public static final int ice_box=0x7f020021;
+        public static final int improved_farm=0x7f020022;
+        public static final int lantern=0x7f020023;
+        public static final int lightning_rod=0x7f020024;
+        public static final int log_suit=0x7f020025;
+        public static final int luxury_axe=0x7f020026;
+        public static final int marble_suit=0x7f020027;
+        public static final int miner_hat=0x7f020028;
+        public static final int night_light=0x7f020029;
+        public static final int opulent_pickaxe=0x7f02002a;
+        public static final int pickaxe=0x7f02002b;
+        public static final int piggyback=0x7f02002c;
+        public static final int pitchfork=0x7f02002d;
+        public static final int pumpkin_lantern=0x7f02002e;
+        public static final int rainometer=0x7f02002f;
+        public static final int razor=0x7f020030;
+        public static final int regal_shovel=0x7f020031;
+        public static final int science_machine=0x7f020032;
+        public static final int shadow_manipulator=0x7f020033;
+        public static final int shovel=0x7f020034;
+        public static final int sleep_dart=0x7f020035;
+        public static final int spear=0x7f020036;
+        public static final int straw_roll=0x7f020037;
+        public static final int tent=0x7f020038;
+        public static final int tooth_trap=0x7f020039;
+        public static final int torch=0x7f02003a;
+        public static final int trap=0x7f02003b;
+        public static final int umbrella=0x7f02003c;
+        public static final int winterometer=0x7f02003d;
     }
     public static final class id {
-        public static final int SingleItemTitle=0x7f080002;
-        public static final int action_settings=0x7f080003;
-        public static final int rowTextView=0x7f080000;
-        public static final int textView1=0x7f080001;
+        public static final int Icon=0x7f090006;
+        public static final int SingleItemTitle=0x7f090005;
+        public static final int action_settings=0x7f090007;
+        public static final int rowTextView=0x7f090000;
+        public static final int textView1=0x7f090004;
+        public static final int textView2=0x7f090001;
+        public static final int textView3=0x7f090002;
+        public static final int textView4=0x7f090003;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
@@ -53,12 +114,12 @@ public final class R {
         public static final int tools=0x7f03000d;
     }
     public static final class menu {
-        public static final int main=0x7f070000;
+        public static final int main=0x7f080000;
     }
     public static final class string {
-        public static final int action_settings=0x7f050001;
-        public static final int app_name=0x7f050000;
-        public static final int hello_world=0x7f050002;
+        public static final int action_settings=0x7f060001;
+        public static final int app_name=0x7f060000;
+        public static final int hello_world=0x7f060002;
     }
     public static final class style {
         /** 
@@ -82,10 +143,10 @@ public final class R {
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f060000;
+        public static final int AppBaseTheme=0x7f070000;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f060001;
+        public static final int AppTheme=0x7f070001;
     }
 }
